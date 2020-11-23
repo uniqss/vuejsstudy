@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+<!--  1.事件调用的方法没有参数-->
+  <button @click="btn1Click">按钮1</button>
+  <button @click="btn1Click()">按钮1</button>
+
+<!--  2.事件调用时省略小括号-->
+  <button @click="btn2Click(123)">按钮2</button>
+  <button @click="btn2Click()">按钮2</button>
+  <button @click="btn2Click">按钮2</button>
+
+<!--  3.方法定义时，除了需要event对象，同时又需要其他参数-->
+<!--  <button @click="btn3Click(123, event)">按钮3</button>-->
+<!--  <button @click="btn3Click(123, $event)">按钮3</button>-->
+  <button @click="btn3Click('abc', $event)">按钮3</button>
+<!--  <button @click="btn3Click(abc, $event)">按钮3</button>-->
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '你好啊',
+      event: 'coderwhy',
+    },
+    methods: {
+      btn1Click() {
+        console.log("btn1Click");
+      },
+      btn2Click(event) {
+        console.log('------', event);
+      },
+      btn3Click(abc, event) {
+        console.log('+++++', abc, event);
+      }
+    },
+  })
+</script>
+
+</body>
+</html>

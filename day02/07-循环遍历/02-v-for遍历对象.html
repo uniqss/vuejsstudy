@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <ul>
+    <li>{{info.name}}</li>
+    <li>{{info.age}}</li>
+    <li>{{info.height}}</li>
+  </ul>
+  <br>
+<!--  1.在遍历对象的过程中，如果只是获取一个值，那么获取到的是value.如果获取key，第二个值即可-->
+<!--  2.获取key和value: (value, key)-->
+<!--  3.获取key和value和index：(value, key, index)-->
+  <ul>
+    <li v-for="(value, key, idx) in info">{{idx + 1}}.{{key}}=>{{value}}</li>
+  </ul>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '你好啊',
+      info: {
+        name: 'why',
+        age: 18,
+        height: 1.88,
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

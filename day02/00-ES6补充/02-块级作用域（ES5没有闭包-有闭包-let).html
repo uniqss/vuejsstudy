@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div>
+  <button>按钮</button>
+  <button>按钮</button>
+  <button>按钮</button>
+  <button>按钮</button>
+  <button>按钮</button>
+</div>
+
+<script>
+  // ES5中的var是没有块级作用域的
+  // ES6中的let是有块级作用域的
+  // ES5以前因为if和for里面都没有块级作用域，很多场景必须用闭包来解决作用域问题
+  // 1.变量作用域：在什么范围内可用
+  {
+    var name = 'why';
+    console.log(name);
+  }
+  console.log(name);
+  // 2.没有块级作用域的问题-if
+  // 3.没有块级作用域的问题-for--可以用装饰解决
+  // const btns = document.getElementsByTagName('button');
+  // for (var i = 0;i < btns.length;i++){
+  //   btns[i].addEventListener('click', function() {
+  //     console.log('第' + i + '个按钮被点击');
+  //   });
+  // }
+
+  const btns = document.getElementsByTagName('button');
+  for (let i = 0;i < btns.length;i++){
+    btns[i].addEventListener('click', function() {
+      console.log('第' + i + '个按钮被点击');
+    });
+  }
+</script>
+
+</body>
+</html>
