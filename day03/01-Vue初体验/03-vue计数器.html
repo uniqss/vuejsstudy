@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <h2>当前计数：{{counter}}</h2>
+<!--    <button v-on:click="counter++">+</button>-->
+<!--    <button v-on:click="counter&#45;&#45;">-</button>-->
+    <button v-on:click="increment">+</button>
+    <button @click="decrement">-</button>
+</div>
+
+<script src="../../js/vue.js"></script>
+<script>
+    const obj= {
+        counter:0
+    }
+    const app = new Vue({
+        el:'#app',
+        data: obj,
+        methods:{
+            increment:function (){
+                console.log('increment 被执行');
+                this.counter++;
+            },
+            decrement:function (){
+                console.log('decrement 被执行');
+                this.counter--;
+            }
+        },
+        beforeCreate:function (){
+            console.log("beforeCreate");
+        },
+        created:function (){
+            console.log("created");
+        },
+        beforeMount:function (){
+            console.log("beforeMount");
+        },
+        mounted:function (){
+            console.log("mounted");
+        }
+    })
+
+    // 旧式做法：
+    // 1.拿button元素
+    // 2.添加监听事件，指定函数
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- 这个v-for之所以有意义是因为我们把#app交给了 new Vue 对象 管理 -->
+<div id = "app">
+    <ul>
+        <li v-for="item in movies">{{item}}</li>
+    </ul>
+</div>
+
+<script src="../../js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el:'#app',
+        data:{
+            message:'你好啊',
+            movies:['星际穿越', '剑雨', '大话西游', '盗梦空间'],
+        }
+    })
+</script>
+
+
+</body>
+</html>
