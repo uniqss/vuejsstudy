@@ -11,6 +11,12 @@
 </head>
 <body>
 
+<!--
+关键的点在于只用一个currentIndex记录当前红色的id(配合style使用)，
+用v-bind:class(:class)的方式实现特殊class(active)的红色显示，
+用v-on:click(@click)的方式实现修改currentIndex利用VUE响应式的特性实时更新当前红色背景
+-->
+
 <div id="app">
   <ul>
     <li v-for="(item, index) in movies"

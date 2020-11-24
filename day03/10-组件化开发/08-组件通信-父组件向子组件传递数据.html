@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<!--1.在子组件中声明props，变量可以是数组，可以是对象，里面每个变量可以限定类型，可以有默认值-->
+<!--2.在app中使用处，必须v-bind绑定一下要传的数据，从父组件中传到子组件-->
+<!--3.在父组件中data 中必须要有该数据-->
+
+<div id="app">
+<!--  注意组件在使用的时候可以赋值，，，这一点很灵活-->
+  <cpn v-bind:cmovies="movies" :cmessage="message"></cpn>
+<!--  看下cmessage不绑数据且带默认值的效果-->
+  <cpn v-bind:cmovies="movies" ></cpn>
+
+<!--  如果这样的话会直接把movies和message当字符串处理，一定要用v-bind:-->
+<!--  <cpn cmovies="movies" cmessage="message"></cpn>-->
+</div>
+
+<template id="cpn">
+  <div>
+    <ul>
+      <li v-for="item in cmovies">{{item}}</li>
+    </ul>
+    <p>{{cmovies}}</p>
+    <h2>{{cmessage}}</h2>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+  // 父传子：props 在app中绑定过来数据
+  const cpn = {
+    template: `#cpn`,
+    // props: ['cmovies', 'cmessage'],
+
+    //这种写法更好，对数据有类型限制
+    props: {
+      // cmovies: Array,
+
+      cmovies: {
+        type:Array,
+        default: [], // vue2.5.17及以后，数组这样传默认值，一定会报错，，，但是我测试却是OK的，最新版本已经允许这样写了，因为这样更简洁
+        // default(){
+        //   return [];
+        // },
+      },
+      // cmessage: String,
+      cmessage: {
+        type: String,
+        default: 'aaaaa',
+        // required：是否必须的，默认false，必传不传会报错误
+        // required: true,
+      }
+    },
+    data() {
+      return {};
+    },
+    methods: {
+
+    },
+  }
+
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '你好啊',
+      movies: ['Titanic', '海贼王', '海尔兄弟']
+    },
+    components: {
+      cpn
+    }
+  });
+</script>
+
+</body>
+</html>

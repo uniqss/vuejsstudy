@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <!--  v-bind写法不支持驼峰！！！-->
+  <!--  <cpn :cInfo="info" :childMyMessage="parentMyMessage"></cpn>-->
+  <cpn :c-info="info" :child-my-message="parentMyMessage"></cpn>
+</div>
+
+<template id="cpn">
+  <!--组件模板必须包含一个且仅一个根节点-->
+  <div>
+    <h2>{{cInfo}}</h2>
+    <h2>{{childMyMessage}}</h2>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+
+  const cpn = {
+    template: `#cpn`,
+    props: {
+      cInfo: {
+        type: Object,
+        default() {
+          return {};
+        }
+      },
+      childMyMessage: {
+        type: String,
+        default: 'no data',
+      }
+    },
+  }
+
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '你好啊',
+      info: {
+        name: 'why',
+        age: 18,
+        height: 1.88,
+      },
+      parentMyMessage: "asdf",
+    },
+    components: {
+      cpn
+    }
+  });
+</script>
+
+</body>
+</html>

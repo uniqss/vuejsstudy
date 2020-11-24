@@ -8,6 +8,7 @@
 
 <div id="app">
   <ul>
+<!--    只有以下标访问的方式不是响应式的！！！  下标访问的方式修改为splice(idx, 1, 'newvalue')方式  或者直接Vue.set(this.letters, 0, 'newvalue')-->
 <!--    <li v-for="item in letters" :key="item">{{item}}</li>-->
     <li v-for="item in letters">{{item}}</li>
   </ul>

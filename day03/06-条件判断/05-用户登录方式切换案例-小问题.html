@@ -9,7 +9,7 @@
 <div id="app">
   <span v-if="isUser">
     <label for="username">用户账号</label>
-<!--    key如果相同，vdom会复用。如果不同，会创建新的。默认不定义key的话会复用-->
+<!--    key如果相同，vdom会复用。如果不同，会创建新的。默认不定义key的话会复用。可以用这个特征来实现input切换以后置空或者不置空，相同key重用则不置空，不同key则置空-->
     <input type="text" id="username" placeholder="用户账号" key="username">
   </span>
   <span v-else>

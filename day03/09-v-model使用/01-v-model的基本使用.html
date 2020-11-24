@@ -6,6 +6,8 @@
 </head>
 <body>
 
+<!--v-model是一个双向绑定，既能把model中的数据绑到view中(动态修改model中的数据会响应式实时刷新view)，又能把view中的数据实时更新到model（用户操作修改后会实时更新model，并响应式更新其他用到的元素）-->
+
 <div id="app">
   <input type="text" v-model="message">
   {{message}}

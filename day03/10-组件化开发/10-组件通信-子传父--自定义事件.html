@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+<!--  2.在使用组件处v-on调用父组件的函数-->
+<!--  <cpn v-on:itemClick=""></cpn>-->
+  <cpn @item_click="cpnClick"></cpn>
+</div>
+
+<template id="cpn">
+  <div>
+    <button v-for="item in categories" @click="btnClick(item)">{{item.name}}</button>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+
+  const cpn = {
+    template: `#cpn`,
+    data() {
+      return {
+        categories: [
+          {id:'aaa', name:'热门推荐',},
+          {id:'bbb', name:'手机数码',},
+          {id:'ccc', name:'家用家电',},
+          {id:'ddd', name:'电脑办公',},
+        ],
+      }
+    },
+    methods: {
+      btnClick(item) {
+        // 1.发送事件：自定义事件
+        this.$emit('item_click', item);
+        // console.log(item);
+        // console.log(item.name);
+      }
+    }
+  }
+
+  const app = new Vue({
+    el: '#app',
+    data: {
+    },
+    components: {
+      cpn
+    },
+    methods: {
+      //3.在父组件中实现
+      cpnClick(item) {
+        console.log('cpnClick');
+        console.log(item);
+      }
+    },
+  });
+</script>
+
+</body>
+</html>

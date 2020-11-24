@@ -23,6 +23,7 @@
       //   return this.firstName + ' ' + this.lastName;
       // },
       // 属性一般是没有set方法的，只读属性。
+      // 计算属性的getter就是默认的，如果不写一样的效果。 setter一般不用写，当然也可以特殊处理一下。
       fullName: {
         set: function (newValue) {
           console.log('-----', newValue);

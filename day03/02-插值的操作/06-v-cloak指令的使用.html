@@ -12,6 +12,7 @@
 <body>
 
 <!--小心不要把cloak拼成了clock-->
+<!--c-cloak会在尚未加载完成时隐藏掉，否则如果加载时间较长，就会显示{{message}}这样的字符串，我们不希望用户看到这样的字符串-->
 <div id="app" v-cloak>
   {{message}}
 </div>

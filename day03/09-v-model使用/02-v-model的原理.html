@@ -9,6 +9,8 @@
 <div id="app">
 <!--  <input type="text" v-model="message">-->
 
+<!--  这是一个粗暴的方式实现，功能与v-model一样，但是写法显然丑的多，繁琐的多，只是展示其原理用-->
+
 <!--  <input type="text" :value="message" @input="valueChange($event)">-->
   <input type="text" :value="message" @input="message=$event.target.value">
 
