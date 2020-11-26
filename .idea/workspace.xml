@@ -20,8 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1971c20-b9c0-4517-835c-a288c7a6d669" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LearnVueJs04-v2/01-webpack的使用/02-webpack的配置/简记" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day0304/10-组件化开发/11-组件通信-父子组件通信案例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day0304/10-组件化开发/12-组件通信-父子组件通信案例-watch实现.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day0304/10-组件化开发/13-组件访问-父访问子-children-refs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day0304/11-组件化高级/02-slot-具名插槽的使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day0304/11-组件化高级/03-什么是编译的作用域.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day0304/12-前端模块化/02-ES6的模块化实现/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/learnvuejs01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learnvuejs01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03/10-组件化开发/10-组件通信-子传父--自定义事件.html" beforeDir="false" afterPath="$PROJECT_DIR$/day03/10-组件化开发/10-组件通信-子传父--自定义事件.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +39,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Less File" />
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,21 +59,26 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/coderwhy/HYMall-master" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LearnVueJs04-v2/01-webpack的使用" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\study\vuejs\learnvuestudy\day03\09-v-model使用" />
-      <recent name="F:\study\vuejs\learnvuestudy\day03" />
-      <recent name="F:\study\vuejs\learnvuejs01\day02\06-条件判断" />
-      <recent name="F:\study\vuejs\learnvuejs01\day02" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\study\vuejs\learnvuestudy\LearnVueJs04-v2\01-webpack的使用\03-webpack的loader\src" />
+      <recent name="F:\study\vuejs\learnvuestudy\LearnVueJs04-v2\01-webpack的使用\03-webpack的loader\src\js" />
+      <recent name="F:\study\vuejs\learnvuestudy\LearnVueJs04-v2\02-webpack的配置" />
+      <recent name="F:\study\vuejs\learnvuestudy" />
       <recent name="F:\study\vuejs\learnvuejs01\day01" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\study\vuejs\learnvuejs01\day01" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\study\vuejs\learnvuestudy\LearnVueJs04-v2\01-webpack的使用" />
+      <recent name="F:\study\vuejs\learnvuestudy\LearnVueJs04-v2\01-webpack的使用\03-webpack的loader\src\img" />
+      <recent name="F:\study\vuejs\learnvuestudy\LearnVueJs04-v2" />
+      <recent name="F:\study\vuejs\learnvuestudy\day03\09-v-model使用" />
+      <recent name="F:\study\vuejs\learnvuestudy\day03" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -79,7 +94,13 @@
       <workItem from="1606039898770" duration="113000" />
       <workItem from="1606040068171" duration="6352000" />
       <workItem from="1606047486787" duration="32062000" />
-      <workItem from="1606125370161" duration="31147000" />
+      <workItem from="1606125370161" duration="55681000" />
+      <workItem from="1606304955991" duration="8246000" />
+      <workItem from="1606358400317" duration="14288000" />
+      <workItem from="1606378744040" duration="3912000" />
+      <workItem from="1606382672809" duration="52000" />
+      <workItem from="1606382771449" duration="2383000" />
+      <workItem from="1606385638294" duration="12590000" />
     </task>
     <servers />
   </component>
@@ -96,16 +117,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="711" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606391027038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606391027038" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606360696380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606360696380" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606213299356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606213299356" />
-    <state x="664" y="38" width="998" height="921" key="SettingsEditor" timestamp="1606137197929">
+    <state x="664" y="38" width="998" height="921" key="SettingsEditor" timestamp="1606271874038">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="664" y="38" width="998" height="921" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606137197929" />
+    <state x="664" y="38" width="998" height="921" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606271874038" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1606048895826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

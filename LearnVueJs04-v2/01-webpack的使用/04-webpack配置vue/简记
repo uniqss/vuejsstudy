@@ -1,0 +1,27 @@
+webpack ./src/main.js ./dist/bundle.js
+
+如果有webpack.config.js
+
+webpack即可
+
+npm init
+
+
+如果有package.json里面有定义
+
+npm run build
+
+
+加入css的loader
+main.js里面必须
+require('./src/css/normal.css');
+
+https://webpack.js.org/loaders/css-loader/
+
+npm install --save-dev css-loader
+
+import css from "file.css";
+
+css-loader只负责加载，不负责解析
+
+https://webpack.js.org/loaders/style-loader/

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<!--具名插槽使用非常频繁-->
+
+<div id="app">
+  <!--  如果没有名字，这样会把三个一起替换掉-->
+  <!--  <cpn><span>标题</span></cpn>-->
+  <cpn><span slot="center">标题</span></cpn>
+  <cpn><button slot="left">左边</button></cpn>
+  <cpn><div slot="right">右边</div></cpn>
+</div>
+
+<template id="cpn">
+  <div>
+    <slot name="left"><span>left</span></slot>
+    <slot name="center"><span>middle</span></slot>
+    <slot name="right"><span>right</span></slot>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '你好啊',
+    },
+    components: {
+      cpn: {
+        template: `#cpn`,
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

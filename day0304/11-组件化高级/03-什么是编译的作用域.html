@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--  这行代码可以让它不会变的非常小！！！-->
+  <!--  <meta name="viewport", content="width=device-width, initial-scale=1.0">-->
+</head>
+<body>
+
+<div id="app">
+  <!--  会使用实例里面的，而非组件里面的!!!!!!-->
+  <cpn v-show="isShow"></cpn>
+</div>
+
+<template id="cpn">
+  <div>
+    <h2>我是子组件</h2>
+    <p>我是内容</p>
+    <!--    会在组件里面找而不是在实例里面找-->
+    <button v-show="isShow"></button>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '你好啊',
+      isShow: true,
+    },
+    components: {
+      cpn: {
+        template: `#cpn`,
+        data() {
+          return {
+            isShow: false,
+          }
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
