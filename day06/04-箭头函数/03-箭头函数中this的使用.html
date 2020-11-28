@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+  // // 什么时候使用箭头函数比较多? 当我们准备把一个函数作为参数传到另外一个函数时，使用箭头函数是最多的
+  // setTimeout(function () {
+  //   console.log(this);
+  // }, 1000)
+  //
+
+  // this   window
+
+  // console.log('-----------------');
+  //
+  // setTimeout(() => {
+  //   console.log(this)
+  // })
+
+  // 结论：箭头函数中的this引用的是最近作用域中的this
+  // 向外层作用域中一层层查找this,直到有this的定义
+  // const obj = {
+  //   aaa() {
+  //
+  //     // 这里会通过CALL，会把Window作为第一个参数传进去的，也就是this
+  //
+  //       setTimeout(function () {
+  //         console.log('11111');
+  //         console.log(this); // Window
+  //       }, 1000)
+  //
+  //
+  //
+  //       // this
+  //       // obj
+  //
+  //     // 这里只是往外找一层，找到的this就是obj
+  //       setTimeout(() => {
+  //         console.log('22222');
+  //         console.log(this); // obj对象
+  //       }, 1000)
+  //
+  //   }
+  // }
+  //
+  // obj.aaa()
+
+
+
+  const obj = {
+    aaa() {
+      setTimeout(function () {
+        // 记住，只要是function() { 这种格式，肯定是Window
+        setTimeout(function (){
+          console.log(this)
+        })
+        // 也是Window，找的是上一层作用域里的this.上一层作用域里的this 就是Window
+        setTimeout(() => {
+          console.log(this)
+        })
+      }, 1000)
+      setTimeout(() => {
+        // 这种格式肯定是Window
+        setTimeout(function () {
+          console.log(this)
+        })
+        // 这里 是obj
+        setTimeout(() => {
+          console.log(this)
+        })
+      }, 1000)
+
+    }
+  }
+
+  obj.aaa()
+
+</script>
+
+</body>
+</html>

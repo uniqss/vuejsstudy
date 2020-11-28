@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1971c20-b9c0-4517-835c-a288c7a6d669" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LearnVueJs04-v2/01-webpack的使用/02-webpack的配置/简记" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day0304/10-组件化开发/11-组件通信-父子组件通信案例.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day0304/10-组件化开发/12-组件通信-父子组件通信案例-watch实现.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day0304/10-组件化开发/13-组件访问-父访问子-children-refs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day0304/11-组件化高级/02-slot-具名插槽的使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day0304/11-组件化高级/03-什么是编译的作用域.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day0304/12-前端模块化/02-ES6的模块化实现/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/learnvuejs01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learnvuejs01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day06/03-testvuecli3/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/day06/03-testvuecli3/src/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +31,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Less File" />
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -62,7 +54,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/LearnVueJs04-v2/01-webpack的使用" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -100,7 +93,9 @@
       <workItem from="1606378744040" duration="3912000" />
       <workItem from="1606382672809" duration="52000" />
       <workItem from="1606382771449" duration="2383000" />
-      <workItem from="1606385638294" duration="12590000" />
+      <workItem from="1606385638294" duration="23775000" />
+      <workItem from="1606462065548" duration="8192000" />
+      <workItem from="1606470341227" duration="5155000" />
     </task>
     <servers />
   </component>
@@ -132,10 +127,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606213299356" />
-    <state x="664" y="38" width="998" height="921" key="SettingsEditor" timestamp="1606271874038">
+    <state x="606" y="87" width="998" height="921" key="SettingsEditor" timestamp="1606468453515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="664" y="38" width="998" height="921" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606271874038" />
+    <state x="606" y="87" width="998" height="921" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606468453515" />
+    <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1606468310521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606468310521" />
+    <state x="662" y="252" width="596" height="536" key="find.popup" timestamp="1606401170971">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="252" width="596" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606401170971" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1606048895826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
