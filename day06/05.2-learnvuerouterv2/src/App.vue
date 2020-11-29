@@ -21,9 +21,18 @@
 
     <router-link to="/home">首页</router-link>
     <router-link to="/about">关于</router-link>
-    <router-link :to="'/user/' + userId">用户</router-link>
+    <!--    <router-link :to="'/user/' + userId">用户</router-link>-->
+    <!--&lt;!&ndash;    <router-link to="/profile">Profile</router-link>&ndash;&gt;-->
+    <!--    <router-link :to="{path: '/profile', query: {name:'why', age:18, height: 1.88}}">-->
+    <!--      档案</router-link>-->
 
-    <router-view></router-view>
+    <button @click="btnClickUser">用户</button>
+    <button @click="btnClickProfile">档案</button>
+
+    <!--    注意这里一定不要加空格！！！！！！-->
+    <keep-alive exclude="Profile,User">
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
@@ -45,6 +54,19 @@ export default {
       // this.$router.push('/about');
       this.$router.replace('/about');
       console.log('aboutClick');
+    },
+    btnClickUser() {
+      this.$router.push('/user/' + this.userId)
+    },
+    btnClickProfile() {
+      this.$router.push({
+        path: '/profile',
+        query: {
+          name: 'kobe',
+          age: 19,
+          height: 1.89
+        }
+      })
     }
   }
 }

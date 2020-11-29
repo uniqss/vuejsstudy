@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/LearnVueJs04-v2/01-webpack的使用/06-webpack配置的分离/node_modules/vue/src/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/day07/03-tabbar/node_modules/vue/src/platforms" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
