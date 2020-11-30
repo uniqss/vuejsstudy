@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <label>
       <input type="file" id="files" ref="files" multiple v-on:change="handleFilesUpload()"/>
     </label>
@@ -10,10 +10,11 @@
 </template>
 
 <script>
-import Vue from 'vue';
+
 import XLSX from 'xlsx';
 
 export default {
+  name: "Export",
   data() {
     return {
       files: [],
@@ -61,7 +62,10 @@ export default {
       console.log('sheetName:', sheetName,)
       console.log('json:', json);
     },
-  }
+  },
 }
-
 </script>
+
+<style scoped>
+
+</style>

@@ -8,8 +8,12 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/export',
+    },
+    {
+      path: '/export',
       name: 'HelloWorld',
       component: HelloWorld
-    }
+    },
   ]
 })
