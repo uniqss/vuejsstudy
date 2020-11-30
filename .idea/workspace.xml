@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1971c20-b9c0-4517-835c-a288c7a6d669" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/learnvuejs01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learnvuejs01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day06/05.2-learnvuerouterv2/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/day06/05.2-learnvuerouterv2/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day06/05.2-learnvuerouterv2/src/components/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/day06/05.2-learnvuerouterv2/src/components/About.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day06/05.2-learnvuerouterv2/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/day06/05.2-learnvuerouterv2/src/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day06/05.2-learnvuerouterv2/src/components/User.vue" beforeDir="false" afterPath="$PROJECT_DIR$/day06/05.2-learnvuerouterv2/src/components/User.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day06/05.2-learnvuerouterv2/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/day06/05.2-learnvuerouterv2/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +32,9 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Less File" />
         <option value="Vue Single File Component" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -56,7 +50,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day07" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day08" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
@@ -103,7 +97,8 @@
       <workItem from="1606470341227" duration="20099000" />
       <workItem from="1606561946738" duration="162000" />
       <workItem from="1606562117013" duration="4817000" />
-      <workItem from="1606613707825" duration="2390000" />
+      <workItem from="1606613707825" duration="2528000" />
+      <workItem from="1606699423168" duration="3976000" />
     </task>
     <servers />
   </component>
@@ -131,10 +126,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606360696380" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606213299356">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606616911455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606213299356" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606616911455" />
     <state x="606" y="87" width="998" height="921" key="SettingsEditor" timestamp="1606468453515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -155,6 +150,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606553732547" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/day99/01-vue_read_xlsx/src/App.vue</url>
+          <line>81</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
