@@ -25,12 +25,6 @@ export var height = 1.88;
 export function mul(num1, num2) {
   return num1 * num2;
 }
-// 4.export class
-export class Person {
-  run() {
-    console.log('running');
-  }
-}
 
 // 5.export default
 // const address = '北京市';
